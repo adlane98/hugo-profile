@@ -75,9 +75,9 @@
                 </svg>
             </button>
 
-            {{ $languageURL := (print $.Site.BaseURL "en") }}
+            {{ $languageURL := (print ($.Site.BaseURL | relURL) "en") }}
             {{ if eq .Site.LanguageCode "fr-FR" }}
-                {{ $languageURL = (print $.Site.BaseURL "fr") }}
+                {{ $languageURL = (print ($.Site.BaseURL | relURL) "fr") }}
             {{ end }}
 
 
