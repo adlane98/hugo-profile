@@ -75,7 +75,7 @@
                 </svg>
             </button>
 
-            {{ $languageURL := (print ($.Site.BaseURL | relURL) "en") }}
+            {{ $languageURL := (print ($.Site.BaseURL | relURL)) }}
             {{ if eq .Site.LanguageCode "fr-FR" }}
                 {{ $languageURL = (print ($.Site.BaseURL | relURL) "fr") }}
             {{ end }}
@@ -210,7 +210,7 @@
                             </a>
                             {{ end }}
                             {{ if eq .Site.LanguageCode "fr-FR" }}
-                            {{ $languageURL := (print $.Site.BaseURL "en") }}
+                            {{ $languageURL := (print $.Site.BaseURL) }}
                             <a id="language-toggle" class="button" href="{{ $languageURL | relURL }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="13px" viewBox="0 0 18 13" version="1.1">
                                     <defs>
