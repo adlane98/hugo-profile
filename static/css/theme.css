@@ -29,7 +29,7 @@
 button#theme-toggle {
     border: none;
     font-size: 26px;
-    margin: auto 4px;
+    margin: auto 4px auto 4px;
 }
 
 body.dark #moon {
@@ -44,4 +44,18 @@ body:not(.dark) #sun {
 body *::selection {
     color: var(--text-color) !important;
     background-color: var(--primary-color) !important;
+}
+
+a.button#language-toggle {
+    border-radius: 3px;
+    color: buttontext;
+    text-decoration: none;
+    border: none;
+    font-size: 26px;
+    background-color: var(--background-color);
+    margin: -4px 4px auto 4px;
+}
+
+.text-center {
+    margin-top: -2px !important;
 }

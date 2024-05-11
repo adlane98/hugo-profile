@@ -66,6 +66,9 @@
                                     </span>
                                     {{ end }}
                                 </div>
+                                <div class="pb-1">
+                                    <small>{{ .location }}</small>
+                                </div>
 
                                 {{ if .featuredLink.enable | default false }}
                                 <div class="py-2 featuredLink">
@@ -104,8 +107,12 @@
                                         </span>
                                     </span>
                                     {{ end }}
+
                                 </div>
-                                
+                                <div class="pb-1">
+                                    <small>{{ .location }}</small>
+                                </div>
+
                                 {{ if .featuredLink.enable | default false }}
                                 <div class="py-2 featuredLink">
                                     <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
